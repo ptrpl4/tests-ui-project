@@ -56,7 +56,7 @@ Just verify that you can run them without errors.
 Use Ctrl-C to kill them.
 
 ## Project Setup
-Run `pipenv install` to install the dependencies.
-To activate this project's virtualenv, run `pipenv shell`
-Alternatively, run a command inside the virtualenv with `pipenv run ...`
-Run `pipenv run python -m pytest tests/test_pytest.py` to check pytest is working
+Run `pipenv install` to install the dependencies.  
+To activate this project's virtualenv, run `pipenv shell`  
+Alternatively, run a command inside the virtualenv with `pipenv run ...`  
+Run `pipenv run python -m pytest tests/test_pytest.py` to check pytest is working  
