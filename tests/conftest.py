@@ -7,7 +7,6 @@ import pytest
 import selenium.webdriver
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver import ChromeOptions
 
 
 @pytest.fixture
@@ -32,17 +31,17 @@ def browser(config):
     # Initialize WebDriver instance
     if config['browser'] == 'Firefox':
         s = Service('./geckodriver')
-        browser = webdriver.Firefox(service = s)
+        browser = webdriver.Firefox(service=s)
     elif config['browser'] == 'Chrome':
         s = Service('./chromedriver')
-        browser = webdriver.Chrome(service = s)
+        browser = webdriver.Chrome(service=s)
     elif config['browser'] == 'Headless Chrome':
         opts = selenium.webdriver.ChromeOptions()
         opts.add_argument('headless')
         s = Service('./chromedriver')
         browser = webdriver.Chrome(service=s, options=opts)
     else:
-        raise Exception (f'Browser "{config["browser"]}" is not supported')
+        raise Exception(f'Browser "{config["browser"]}" is not supported')
 
     # Add 10 sec wait
     browser.implicitly_wait(config['implicitly_wait'])
