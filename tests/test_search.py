@@ -5,7 +5,7 @@ import pytest
 queries = ['panda', 'python', 'dark souls']
 
 
-@pytest.mark.parametrize('phrase', [queries])
+@pytest.mark.parametrize('phrase', queries)
 def test_basic_duckduckgo_search(browser, phrase):
     search_page = DuckDuckGoSearchPage(browser)
     result_page = DuckDuckGoResultPage(browser)
