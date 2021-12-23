@@ -6,13 +6,13 @@ Deps:
 - pytest-xdist
 
 ## Python Setup
-python v3.8+
-[pipenv](https://docs.pipenv.org/).
+python v3.8+  
+[pipenv](https://docs.pipenv.org/)  
 install `pip install pipenv`
 
 ## WebDriver Setup
 
-[ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+[ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)  
 [geckodriver](https://github.com/mozilla/geckodriver/releases)
 
 ChromeDriver and geckodriver must be installed on the
@@ -51,12 +51,12 @@ $ ChromeDriver
 $ geckodriver
 ```
 
-You may or may not see any output.
-Just verify that you can run them without errors.
-Use Ctrl-C to kill them.
+You may or may not see any output.  
+Just verify that you can run them without errors.  
+Use Ctrl-C to kill them.  
 
 ## Project Setup
-Run `pipenv install` to install the dependencies.  
-To activate this project's virtualenv, run `pipenv shell`  
-Alternatively, run a command inside the virtualenv with `pipenv run ...`  
-Run `pipenv run python -m pytest tests/test_pytest.py` to check pytest is working  
+Run `pipenv install` to install the dependencies.    
+To activate this project's virtualenv, run `pipenv shell`    
+Alternatively, run a command inside the virtualenv with `pipenv run ...`    
+Run `pipenv run python -m pytest tests/test_pytest.py` to check pytest is working    
