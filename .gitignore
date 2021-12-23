@@ -111,3 +111,7 @@ venv.bak/
 # Drivers
 chromedriver
 geckodriver
+
+# Result reports
+
+report.xml
