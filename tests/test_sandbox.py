@@ -4,6 +4,7 @@ import pytest
 # --------------------------------------------------------------------------------
 # A test function that triggers an exception
 # --------------------------------------------------------------------------------
+@pytest.mark.fail
 def test_divide_by_zer0():
     num = 1 / 0
     return num
